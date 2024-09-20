@@ -10,7 +10,8 @@
 
 # Harmonic Numbers : 3!=3*2*1 , 2!, ....................
 
-"""
+def main():
+    """
 
     Description: 
         This function is used to calculate the Harmonic number.
@@ -23,9 +24,17 @@
 
 num=int(input("Enter the number:"))
 i=1
-while i<num:
-    print(1,"/",i," + ",end=" ")
-    i=i+1
-    
-    if i==num:
+while i<=num:
+
+   if(i<num):
+     print(1,"/",i," + ",end=" ")
+     
+   else:
+     print(1,"/",i)   
+ 
+   if i==num:
        print("\nThe nth Harmonic number is:",1,'/',num) 
+   i=i+1 
+
+if __name__=="__main__":
+    main()
