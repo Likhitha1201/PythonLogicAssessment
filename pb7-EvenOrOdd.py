@@ -11,7 +11,9 @@
 # Even: 0, 2, 4, 6, 8,....................
 # Odd: 1, 3, 5, 7, 9,..................
 
-"""
+
+def evenOrOdd(data):
+    """
 
     Description: 
         This function is used to calculate the given number is even or odd.
@@ -21,7 +23,7 @@
         It print's the given number is even or odd.
         
 """
-def evenOrOdd(data):
+
     if data%2==0:
         print('The given number ',data,' is even!!!')
     else:
@@ -29,6 +31,9 @@ def evenOrOdd(data):
         
         
 def main():
+    """
+    num: It is used to take input from user
+    """
     num=int(input("Enter the number:"))
 
     evenOrOdd(num)
