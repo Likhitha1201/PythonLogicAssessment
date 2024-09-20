@@ -10,7 +10,9 @@
 
 # Perfect numbers : 6, 28, 496, 8128....................
 
-"""
+
+def main():
+    """
 
     Description: 
         This function is used to calculate the perfect number.
@@ -21,7 +23,6 @@
         
 """
 
-def main():
     num=int(input('Enter the number:'))
     sum=0
     for i in range(1,num):
