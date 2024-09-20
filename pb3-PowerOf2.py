@@ -11,17 +11,6 @@
 
 # Power of 2 : print all the power of 2^i to n
 
-"""
-
-        Description: 
-            This will take command line argument N and prints a table of the powers of 2 that are less than or equal to 2^N
-        Parameters:
-            (num)It is used to take the user input .
-        return:
-            It prints the out come for given 2 power .
-        
-"""
-
 def power(num):
     """
 
