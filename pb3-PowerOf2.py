@@ -22,12 +22,31 @@
         
 """
 
-def main():
-    num = int(input("Enter the number:"))
+def power(num):
+    """
+
+        Description: 
+            This will take command line argument (num) and prints a table of the powers of 2 that are less than or equal to 2^(num)
+        Parameters:
+            num is an parameter from calling statement (main).
+        return:
+            It prints the table out come for given 2 power .
+        
+"""
+
     table = 1
-    for i in range(1,num):
+    for i in range(1,num+1):
         table = table * 2
-        print(i,"=",table)
+        print('2 ^',i,"=",table)
+
+def main():
+    """
+   Here, num is used to take the user input in the type integer format.
+    """
+    
+    num = int(input("Enter the number:"))
+    
+    power(num)
         
 if __name__=="__main__":
     main()
