@@ -30,12 +30,12 @@ def swapTemp(data1, data2):
     return data1,data2
 
 def swapTuple(data1, data2):
-    print("-----Swapping Using Temporary variable of tuple type------")
+    print("-----Swapping Using tuple type------")
     data1, data2 = data2, data1
     return data1,data2
 
 def swapArithmetic(data1, data2):
-    print("---Swapping Using Temporary variable of tuple type------")
+    print("---Swapping Using Arithmetic Operation ------")
     data1 = data1+data2
     data2 = data1-data2
     data1 = data1-data2
