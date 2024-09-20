@@ -11,7 +11,10 @@
 
 # StopWatch : check the time taken between start and stop time
 
-"""
+import time
+
+def main():
+    """
 
         Description: 
             This function is used to check the time taken.
@@ -21,18 +24,19 @@
             It gives relevent time taken in between them.
         
 """
+    print('Press Enter to start the stopwatch')
+    print("and press CTRL + C to stop the stopwatch")
 
-import time
-print('Press Enter to start the stopwatch')
-print("and press CTRL + C to stop the stopwatch")
-
-while True :
-    try:
-        input()
-        start_time=time.time()
-        print("Stop Watch Started.............")
-        
-    except:
-        print("Stop Watch Stopped.......")
-        end_time=time.time()
-        print("Total Time: ", round(end_time-start_time,2),"seconds")
+    while True :
+        try:
+            input()
+            start_time=time.time()
+            print("Stop Watch Started.............")
+            
+        except:
+            print("Stop Watch Stopped.......")
+            end_time=time.time()
+            print("Total Time: ", round(end_time-start_time,2),"seconds")
+            
+if __name__=="__main__":
+    main()
