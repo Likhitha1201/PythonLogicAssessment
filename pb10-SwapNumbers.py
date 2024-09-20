@@ -10,19 +10,21 @@
 
 # Swaping Numbers : 3!=3*2*1 , 2!, ....................
 
-"""
+def swapTemp(data1, data2):
+    
+    """
 
     Description: 
         This function is used to swap the two numbers.
     Parameters:
-        n1 and n2->It is used to take the user input as type integer
+        data1 and data2->It is parameter came from calling method.
+        Here, there are three methods to swap the number
     return:
         It print's the swaping of two numbers.
         
 """
 
 
-def swapTemp(data1, data2):
     print("-------Swapping Using Temporary variable-------")
     temp=data1
     data1=data2
@@ -43,6 +45,13 @@ def swapArithmetic(data1, data2):
     
     
 def main():
+    
+    """
+        n1 and n2->It is used to take the user input as type integer.
+        d1 and d2 are used to store the swapped data came from called method.
+    """
+    
+    
     n1=int(input('Enter the a element:'))
     n2=int(input('Enter the b element:'))
     
