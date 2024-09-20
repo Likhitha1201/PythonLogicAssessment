@@ -11,25 +11,28 @@
 # Quotient : 4//2.....
 # Reminder: 4%2......
 
-"""
+
+def fun_quotient_reminder(data1,data2):
+    """
 
     Description: 
         This function is used to calculate the quotient and reminder of agiven number.
     Parameters:
-        div1, div2->It is used to take the user input as type integer
+        data1, data2->It is an argument given from calling statement(main).
     return:
-        It print's the quotient and reminder of the given number.
+        It return's the quotient and reminder for calling function.
         
 """
 
-
-
-def fun_quotient_reminder(data1,data2):
     quotient=data1//data2
     reminder=data1%data2
     return quotient,reminder
 
 def main():
+    """
+    div1, div2->It is used to take the user input as type integer
+    qu,rem -> is used to store the data come from called statement.
+"""
     div1=int(input('Enter the divident:'))
     div2=int(input('Enter the divisor:'))
     qu,rem=fun_quotient_reminder(div1,div2)
