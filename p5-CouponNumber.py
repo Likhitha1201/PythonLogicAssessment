@@ -10,26 +10,34 @@
 
 # Coupon : matched-won or loss
 
-"""
 
-        Description: 
-            This function is used to check there luck factor in coupon.
+
+from random import randint
+
+def checkLuckFactor(number_of_coupons,coupon):
+    """     
         Parameters:
             (coupon)It is used to take the coupon input from the user of type integer.
         return:
             It prevents wheather they own or not with the relevent messages.
         
-"""
+    """
 
-from random import randint
-number_of_coupons = int(input('Enter the number of coupon number that you have to generate:'))
-coupon =int(input('Enter the 4 digit coupan number: '))
+    for generated_coupon in range(number_of_coupons):
+        if coupon ==print(randint(0000,9999)):
+            print('Wow Congrats!!!, You Won this!!!')
+        else:
+            print('Sorry!! Better Luck Next time!!!!')
 
-#while generated<=number_of_coupons:
-for generated_coupon in range(number_of_coupons):
-    if coupon ==print(randint(0000,9999)):
-        print('Wow Congrats!!!, You Won this!!!')
+def main():
+    """ 
+    number_of_coupons: it is used to take the user input to generate the no. of coupon's.
+    coupon: it is used to take coupon id from user. 
+    """
+    number_of_coupons = int(input('Enter the number of coupon number that you have to generate:'))
+    coupon =int(input('Enter the 4 digit coupan number: '))
 
-    else:
-        print('Sorry!! Better Luck Next time!!!!')
-     
+    checkLuckFactor(number_of_coupons, coupon)
+
+if __name__=="__main__":
+    main()
