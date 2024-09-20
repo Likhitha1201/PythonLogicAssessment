@@ -10,20 +10,16 @@
 
 # fibonacci series : 0, 1, 2, 3, 5, 8, 13, 21.........
 
-"""
 
-        Description: 
-            This function is used to calculate the fibonacci series.
+def fiboSeries(num):
+    """
         Parameters:
             num: It is used to take the user input as type integer
         return:
-        It print's the group of fibonacci series with in given num.
+            It print's the group of fibonacci series with in given num.
 
-"""
+    """
 
-
-def main():
-    num = int(input("Enter any number: "))
     n1, n2= 0, 1
     sum=0
     if num<=0:
@@ -34,6 +30,13 @@ def main():
             n1 = n2
             n2 = sum
             sum = n1 + n2
+
+def main():
+    """
+    num is used to take the user input , in which we need find fibonacci series untill user specified"
+    """
+    num = int(input("Enter any number: "))
+    fiboSeries(num)
             
 if __name__=="__main__":    
     main()
