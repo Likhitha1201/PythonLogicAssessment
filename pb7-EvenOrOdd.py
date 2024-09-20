@@ -26,6 +26,8 @@ def evenOrOdd(data):
         print('The given number ',data,' is even!!!')
     else:
         print('The given number ',data,' is odd!!!')
+        
+        
 def main():
     num=int(input("Enter the number:"))
 
