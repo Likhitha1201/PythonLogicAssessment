@@ -8,26 +8,34 @@
 
 # Reverse number : 112 -->211
 
-"""
+
+def reverse(num):
+    """
     Description: 
         This function is used to reverse a given number.
     Parameters:
         num: It is used to take the user input as type integer
         It print the reverse of it.
-
-"""
-
-
-def main(): 
-    num= int(input("Enter the number which has to be reversed:"))
+    return:
+        it return's reversed number
+    """
+    
     rev=0
 
     while num>0:
-       n=num%10
-       rev=rev*10+n
-       num=num//10
+       n = num % 10
+       rev = rev * 10 + n
+       num = num // 10
    
-    print(rev) 
+    return(rev) 
+    
+def main(): 
+    """
+    num is used to take the input from the user 
+    """
+    num = int(input("Enter the number which has to be reversed:"))
+    
+    print(reverse(num))
     
 if __name__ == "__main__":
     main()
