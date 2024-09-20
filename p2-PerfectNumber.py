@@ -11,19 +11,16 @@
 # Perfect numbers : 6, 28, 496, 8128....................
 
 
-def main():
+def perfect(num):
     """
-
-    Description: 
-        This function is used to calculate the perfect number.
+    this function is used to check whether the number is perfect or not    
     Parameters:
-        num->It is used to take the user input as type integer
+        num->It is an parameter taken from main method.
+        sum->It stores the sum of divisors and check wheather they are equal.
     return:
-        It print's wheather the given number is perfect num or not.
-        
-"""
-
-    num=int(input('Enter the number:'))
+        It print's it is an perfect number or not.
+    """
+    
     sum=0
     for i in range(1,num):
         if i<num:
@@ -34,6 +31,15 @@ def main():
         print(num,' is perfect number!!')
     else:
         print(num,' is not a perfect number?? ')
+
+def main():
+    """
+       num is an input taken from the user, and i am passing that same argument to a another method .  
+    """
+
+    num=int(input('Enter the number:'))
+    perfect(num)
+  
         
 if __name__=="__main__":
     main()
